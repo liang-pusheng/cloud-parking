@@ -6,6 +6,7 @@ package com.lps.cloudmember.controller;/**
  */
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -20,5 +21,10 @@ public class MemberTestController {
   @GetMapping("/member/hello")
   public String hello() {
     return "member service";
+  }
+
+  @GetMapping("/get/{id}")
+  public int getById(@PathVariable int id) {
+    return 100 + id;
   }
 }

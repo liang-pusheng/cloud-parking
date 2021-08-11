@@ -7,6 +7,7 @@ package com.lps.cloudcredit.client;/**
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * member feign api
@@ -19,4 +20,7 @@ public interface MemberFeignClient {
 
   @GetMapping("/member/hello")
   String hello();
+
+  @GetMapping("/get/{id}")
+  int getById(@PathVariable int id);
 }
