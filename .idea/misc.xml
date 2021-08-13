@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-member/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-credit/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-coupon/pom.xml" />
       </list>
     </option>
   </component>

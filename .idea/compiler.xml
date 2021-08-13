@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-credit" />
         <module name="cloud-member" />
+        <module name="cloud-coupon" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-coupon" options="-parameters" />
       <module name="cloud-credit" options="-parameters" />
       <module name="cloud-member" options="-parameters" />
     </option>
